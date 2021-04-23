@@ -16,7 +16,7 @@ module.exports={
     mode: mode,
     target:target,
     output:{
-        path: path.resolve(__dirname, "docs"),
+        path: path.resolve(__dirname, "dist"),
         assetModuleFilename:"images/[hash][ext][query]"
     },
     module:{
@@ -57,7 +57,7 @@ module.exports={
     },
     devtool: "source-map",
     devServer:{
-        contentBase:"./docs",
+        contentBase:"./dist",
         hot: true,
     },
 };
