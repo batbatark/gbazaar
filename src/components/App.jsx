@@ -1,23 +1,19 @@
-import"../styles/index.scss";
 import Recipes from "./Recipes.jsx"
-import sword from "../images/swc-sword.png";
-import swordSvg from "../images/sword.svg";
+import Whatever from "./Whatever.jsx"
+import"../styles/index.scss";
 
-const   App=()=>{
+const   App = () => {
     return(
         <>
         <section className="hero"></section>
         <main>
             <section>
-                <h1>
-                    Hi React
-                </h1>
+                <h1> Hi React, how are you?</h1>
             </section>
-            <img src={sword} alt="sword" width ="250px"/>
-            <img src={swordSvg} alt="sword" width ="250px"/>
-            <Recipes />
+            <Recipes/>
+            <Whatever/>
         </main>
         </>
     );
 };
-export default App
+export default App;
