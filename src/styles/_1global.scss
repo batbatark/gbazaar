@@ -1,7 +1,7 @@
-@use "variables";
+@import "_2variables.scss";
 body {
   margin: 0;
-  background-color: variables.$bg;
+  background-color: $greenHex;
   color: var(--text);
   font-size: 1 rem;
 }
