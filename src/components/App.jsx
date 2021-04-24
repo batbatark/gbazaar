@@ -1,18 +1,20 @@
 import Recipes from "./Recipes.jsx";
-import Whatever from "./Whatever.jsx";
+import Header from "./Header.jsx";
 
 import  "../styles/index.scss";
 
 const   App = () => {
     return(
         <>
-        <section className="hero"></section>
+        <div className="hero">
+
+        </div>
         <main>
             <section>
                 <h1> Hi React, how are you?</h1>
             </section>
             <Recipes/>
-            <Whatever/>
+            <Header/>
         </main>
         </>
     );

@@ -1,5 +1,5 @@
 import { useState } from "react";
-const Whatever = () => {
+const Header = () => {
     const {state, setState} = useState("Initial state");
     return(
         <div>
@@ -8,4 +8,4 @@ const Whatever = () => {
         </div>      
     );
 };
-export default Whatever;
+export default Header;
