@@ -1,6 +1,7 @@
-import Recipes from "./Recipes.jsx"
-import Whatever from "./Whatever.jsx"
-import"../styles/index.scss";
+import Recipes from "./Recipes.jsx";
+import Whatever from "./Whatever.jsx";
+
+import  "../styles/index.scss";
 
 const   App = () => {
     return(

@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState } from "react"
+import React from "react";
 
 const elvenShieldRecipe={
     leatherStrips: 2,
@@ -19,12 +20,8 @@ const Recipes =()=>{
     return(
         <div>
             <h3>Current Recipe:</h3>
-            <button onClick ={()=>setRecipe(elvenShieldRecipe)}>
-                Elven Shield Recipe
-            </button>
-            <button onClick ={()=>setRecipe(elvenGauntletsRecipe)}>
-                Elven Gauntlets Recipe
-            </button>
+            <button onClick ={() => setRecipe(elvenShieldRecipe)}>Elven Shield Recipe</button>
+            <button onClick ={()=>setRecipe(elvenGauntletsRecipe)}>Elven Gauntlets Recipe</button>
             <ul>
                 {Object.keys(recipe).map((material)=> (
                     <li key={material}>

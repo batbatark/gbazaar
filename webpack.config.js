@@ -7,6 +7,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 let mode = "development";
 let target ="web";
+
 const plugins = [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(), 
@@ -30,7 +31,7 @@ module.exports={
 
     output:{
         path: path.resolve(__dirname, "dist"),
-        assetModuleFilename:"images/[hash][ext][query]"
+        assetModuleFilename:"images/[hash][ext][query]",
     },
     module:{
         rules:[
@@ -43,7 +44,7 @@ module.exports={
                 use:[
                     {
                         loader: MiniCssExtractPlugin.loader, 
-                        options:{publicPath:""},
+                        options:{publicPath: "" },
                     },
                     "css-loader",
                     "postcss-loader",
@@ -61,7 +62,7 @@ module.exports={
     },
     plugins: plugins,
     resolve:{
-        extensions:[".js","jsx"],
+        extensions:[".js", ".jsx"],
     },
     devtool: "source-map",
     devServer:{
