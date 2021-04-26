@@ -40,7 +40,8 @@ https://www.youtube.com/watch?v=xuB1Id2Wxak
 
 ## netlify Demo
 
-github с кодоо авч байгаа Нэтлифай дээр байгаа вэбсайт
+1. github с кодоо авч байгаа Нэтлифай дээр байгаа вэбсайт
+2. https://app.netlify.com/sites/vigilant-jepsen-6945ee/overview
 
 ## Master branch
 
