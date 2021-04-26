@@ -38,6 +38,10 @@ node dist/main.js
 
 https://www.youtube.com/watch?v=xuB1Id2Wxak
 
+## netlify Demo
+
+github с кодоо авч байгаа Нэтлифай дээр байгаа вэбсайт
+
 ## Master branch
 
 1. git init: өөрийн компьютерт (local) шинээр Git repository үүсгэж өгнө.
