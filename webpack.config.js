@@ -1,10 +1,11 @@
 const path= require ("path");
 
 const postCSSPlugins =[
+    require("postcss-import"),
     require("postcss-simple-vars"),
     require("postcss-nested"),
-    require("postcss-preset-env"),
     require("autoprefixer")
+    //require("postcss-preset-env"),
 ];
 module.exports={
     entry:"./src/App.js",
