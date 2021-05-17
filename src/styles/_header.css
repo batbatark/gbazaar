@@ -1,3 +1,8 @@
-.main-nav-header {
-  background-color: skyblue;
+.main-nav--header {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: 100%;
+  background-color: gray;
+  font-weight: 300;
 }
