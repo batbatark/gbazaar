@@ -3,6 +3,7 @@ const webpackDevServer = require("webpack-dev-server");
 
 const postCSSPlugins = [
   require("postcss-import"),
+  require("postcss-mixins"),
   require("postcss-simple-vars"),
   require("postcss-nested"),
   require("autoprefixer"),
@@ -14,14 +15,14 @@ module.exports = {
     filename: "bundled.js",
     path: path.resolve(__dirname, "dist"),
   },
-  //devServer: {
-  //before: function (app, server) {
-  //server._watch("./src/**/*.html");
-  //},
-  //contentBase: path.join(__dirname, "dist"),
-  //hot: true,
-  //port: 3000,
-  //},
+  devServer: {
+    before: function (app, server) {
+      server._watch("./src/**/*.html");
+    },
+    contentBase: path.join(__dirname, "dist"),
+    hot: true,
+    port: 3000,
+  },
 
   mode: "development",
   module: {
